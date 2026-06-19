@@ -21,3 +21,17 @@ max()
 min()
 len()
 '''
+
+sales = [150, 320, 450, 210, 500]
+
+# Total vendido
+print(sum(sales))
+
+# Maior venda
+print(max(sales))
+
+# Menor venda
+print(min(sales))
+
+# Média de vendas
+print(sum(sales) / len(sales))
