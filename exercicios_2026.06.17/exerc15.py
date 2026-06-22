@@ -22,16 +22,18 @@ min()
 len()
 '''
 
+def mean(iterable):
+    # Upgrade: função para calcular a média
+    return sum(iterable) / len(iterable)
+
+
 sales = [150, 320, 450, 210, 500]
 
-# Total vendido
-print(sum(sales))
+print("\n")
 
-# Maior venda
-print(max(sales))
-
-# Menor venda
-print(min(sales))
-
-# Média de vendas
-print(sum(sales) / len(sales))
+print(f'''
+Total vendido: ${sum(sales):.2f}
+Maior venda ${max(sales):.2f}
+Menor venda ${min(sales):.2f}
+Média de vendas ${mean(sales):.2f}
+''')
